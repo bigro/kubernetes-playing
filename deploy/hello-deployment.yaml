@@ -19,3 +19,14 @@ spec:
         image: localhost:5000/nginx
         ports:
         - containerPort: 8080
+        env:
+          - name: HELLO_USER
+            valueFrom:
+              secretKeyRef:
+                name: hello-secret
+                key: username
+          - name: HELLO_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: hello-secret
+                key: password
