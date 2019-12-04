@@ -31,3 +31,6 @@ Kubernetesにデプロイ
 
 `kubectl apply -f deploy/hello-deployment.yaml`
 
+ログを見て起動を確認
+
+`stern hello-deploy`
