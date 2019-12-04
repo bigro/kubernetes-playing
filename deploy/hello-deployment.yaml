@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: localhost:5000/nginx
+        image: localhost:5000/hello-app
         ports:
         - containerPort: 8080
         env:
